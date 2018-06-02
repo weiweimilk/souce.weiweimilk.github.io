@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:weiweimilk/weiweimilk.github.io.git
+	branch = master
