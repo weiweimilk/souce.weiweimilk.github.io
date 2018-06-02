@@ -2,7 +2,7 @@
 title: "monitor system overview"
 date: 2018-06-02T17:51:02+08:00
 lastmod: 2018-06-02T17:51:02+08:00
-draft: false
+draft: true
 tags: ["monitor", "overview"]
 categories: ["career"]
 author: "weiweimilk"
