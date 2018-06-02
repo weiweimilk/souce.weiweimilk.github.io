@@ -1,6 +1,5 @@
 baseURL = "https://weiweimilk.github.io/"
 title = "weiweimilk - just another blog"
-canonifyURLs = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
