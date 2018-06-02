@@ -1,5 +1,6 @@
-baseURL = "https://github.com/weiweimilk/"
+baseURL = "https://weiweimilk.github.io/"
 title = "weiweimilk - just another blog"
+canonifyURLs = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
@@ -19,7 +20,7 @@ PygmentsCodefencesGuessSyntax = true
 PygmentsOptions = "linenos=table"
 
 # language support # en / zh-cn / other... translations present in i18n/
-defaultContentLanguage = "zh-cn"           # Default language to use
+defaultContentLanguage = "en"           # Default language to use
 [languages.en]
   languageCode = "en"
 [languages.zh-cn]
