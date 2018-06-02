@@ -12,3 +12,5 @@ mathjax: false
 
 A blog for weiweimilk
 
+博客搭建参考: https://keysaim.github.io/post/blog/2017-08-15-how-to-setup-your-github-io-blog/
+
