@@ -1,13 +1,14 @@
 ---
-title: "monitor system overview"
+title: "监控系统系列：（四）前端展示"
 date: 2018-06-02T17:51:02+08:00
 lastmod: 2018-06-02T17:51:02+08:00
 draft: true
-tags: ["monitor", "overview"]
-categories: ["career"]
+tags: ["monitor"]
+categories: ["monitor-system"]
 author: "weiweimilk"
 autoCollapseToc: true
 ---
+
 
 
 ## 背景
