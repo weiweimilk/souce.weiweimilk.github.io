@@ -1,0 +1,16 @@
+---
+title: "监控系统系列：（八）时间序列数据的异常检测"
+date: 2018-06-02T17:51:02+08:00
+lastmod: 2018-06-02T17:51:02+08:00
+draft: true
+tags: ["monitor"]
+categories: ["monitor-system"]
+author: "weiweimilk"
+autoCollapseToc: true
+---
+
+
+https://www.bigpanda.io/blog/a-practical-guide-to-anomaly-detection/
+https://news.ycombinator.com/item?id=8846205
+http://dieter.plaetinck.be/post/practical-fault-detection-alerting-dont-need-to-be-data-scientist/
+

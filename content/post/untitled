@@ -1,0 +1,67 @@
+
+
+安装：https://gist.github.com/cjzamora/9fcc740228875f4642a1
+
+安装程序：http://wiki.baidu.com/pages/viewpage.action?pageId=467681382
+
+
+1、spark里的shuffle是什么概念？
+2、一个job会拆成多个executor？那拆分逻辑是？(比如一个SQL语句可以拆解成几个？)
+3、可以使用 mapGroupsWithState 操作和更强大的操作 flatMapGroupsWithState 来完成？
+
+
+
+
+
+
+bin/kafka-topics.sh --create --zookeeper 10.150.128.19:9092,10.150.128.33:9092 --replication-factor 1 --partitions 1 --topic zhouwei13
+
+
+bin/kafka-topics.sh --create --zookeeper 10.150.128.19:2181,10.150.128.19:2182,10.150.128.33:2181 --replication-factor 1 --partitions 1 --topic zhouwei13
+
+
+
+bin/kafka-topics.sh --create --zookeeper 10.150.128.19:2181,10.150.128.19:2182,10.150.128.33:2181 --replication-factor 0 --partitions 1 --topic zhouwei13
+
+
+
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic zhouwei13
+
+
+
+
+
+http://wiki.baidu.com/pages/viewpage.action?pageId=480932152
+
+// list
+bin/kafka-topics.sh --list --zookeeper 10.150.128.19:2181,10.150.128.19:2182,10.150.128.33:2181
+
+// create topic
+bin/kafka-topics.sh --create --zookeeper 10.150.128.19:2181,10.150.128.19:2182,10.150.128.33:2181/load-test --replication-factor 1 --partitions 1 --topic zhouwei13
+
+// publish message to topic
+bin/kafka-console-producer.sh --broker-list test-kafka.docker.gzhl.serv:9092 --topic zhouwei13
+
+// consume message
+bin/kafka-console-consumer.sh --bootstrap-server test-kafka.docker.gzhl.serv:9092 --topic zhouwei13 --from-beginning
+
+
+// hadoop web UI
+http://bjyz-sys-replace24.bjyz:8088/cluster
+
+// submit spark task by yarn
+./bin/spark-submit --class org.apache.spark.examples.SparkPi --master yarn --deploy-mode cluster --driver-memory 1G --executor-memory 1G --executor-cores 1 examples/jars/spark-examples_2.11-2.2.1.jar 40
+
+
+
+
+
+
+
+
+
+
+
+
+
+

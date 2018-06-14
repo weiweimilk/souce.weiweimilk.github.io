@@ -1,0 +1,29 @@
+
+szth-y02-private-cloud-bencth-test-for-xiumei-103.szth
+
+cq01-testing-qapool5054.cq01
+/home/work/loadserver/loadcase/noahee/loadtask/f_rpc是数据和thread控制脚本
+/home/work/loadserver/loadcase/noahee/scene/ff_rpc是发压客户端机器数量控制脚本
+
+
+cq01-testing-qapool5053.cq01
+cq01-testing-qapool5051.cq01
+cq01-testing-qapool5054.cq01
+
+
+cp bin/stress_client /mnt/qianmo2/http_server/lnmp/htdocs/
+cp bin/go-ff /mnt/qianmo2/http_server/lnmp/htdocs/
+
+wget http://cp01-oda1.epc.baidu.com:8083/stress_client
+wget http://cp01-oda1.epc.baidu.com:8083/go-ff
+
+
+chmod 777 stress_client
+
+nohup ./stress_client -host 10.190.75.22 -port 20886 -app app11 &
+
+
+
+
+
+压测数据在work@cq01-testing-qapool5053.cq01.baidu.com

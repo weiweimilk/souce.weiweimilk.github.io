@@ -39,3 +39,11 @@ s6.上层的业务报警，有多重要？
 * wiki : Time series database
 https://blog.outlyer.com/top10-open-source-time-series-databases
 
+
+
+开源方案：
+* OpenTSDB
+
+
+promethues tsdb设计
+https://fabxc.org/tsdb/
