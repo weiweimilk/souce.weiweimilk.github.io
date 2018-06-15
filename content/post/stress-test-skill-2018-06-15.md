@@ -45,6 +45,7 @@ autoCollapseToc: true
 	* go-torch -u http://host:port -t 30
 
 通过上面的两个步骤，成功将性能提升4倍，bingooooo
+
 上面更详细的优化思路，可以参考[官方文档](https://golang.org/pkg/net/http/pprof/)
 
 # END
