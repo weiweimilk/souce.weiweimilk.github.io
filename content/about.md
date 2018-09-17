@@ -15,6 +15,7 @@ A blog for weiweimilk
 博客搭建参考: https://keysaim.github.io/post/blog/2017-08-15-how-to-setup-your-github-io-blog/
 
 
+
 ## 优秀博客推荐：
 * 四火的唠叨: http://www.raychase.net/
-
+* http://www.cs.cmu.edu/~dga/15-712/F13/syllabus.html
