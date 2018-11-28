@@ -13,7 +13,6 @@ autoCollapseToc: true
 ## 背景
 时间序列数据
 
-
 http://www.infoq.com/cn/articles/database-timestamp-03
 
 
@@ -28,6 +27,14 @@ Map< METRIC_KEY , sortedMap<timestamp, METRIC_VALUE >>
  
 
 
+
+### data-db设计
+
+
+### meta-db设计
+
+
+
 tsdb选型的考虑点：
 s1.在METRIC_KEY的分片逻辑，实现上不同：选取的分片是一致性哈希，还是求余哈希。
 s2.SortedMap的实现不同，本质上是一个按Timestamp排序的序列（B＋Tree、SkipList都是很好的实现方式）。
@@ -36,14 +43,15 @@ s4.Metrics是否会无限增加？
 s5.Metrics保留的时间跨度有多长？
 s6.上层的业务报警，有多重要？
 
+
 * wiki : Time series database
 https://blog.outlyer.com/top10-open-source-time-series-databases
 
 
-
 开源方案：
+
 * OpenTSDB
-
-
-promethues tsdb设计
-https://fabxc.org/tsdb/
+* Cassandra
+* prometheus: https://prometheus.io/docs/prometheus/latest/storage/
+	* promethues tsdb设计
+	* https://fabxc.org/tsdb/

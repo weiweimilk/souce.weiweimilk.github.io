@@ -15,17 +15,20 @@ autoCollapseToc: true
 
 ## 业务场景分析
 从业务上考虑，采集数据需要覆盖的场景：
-日志采集
-进程指标采集
-自定义脚本采集
-用户
-采集数据的类型
-机器监控项采集
-进程采集（各种类型进程，存活性监控）
-日志采集（多维度数据采集能力）
-业务监控（端口，语义，http 监控）？
-另外，支持自定义脚本采集
-自定义 http 监控
+
+### 本机agent采集（推模式）
+* 日志采集
+* 进程采集
+* 机器监控项采集
+* 端口监控项采集
+* 自定义http数据采集（/monitor）
+* 自定义脚本采集(lua, python, shell)
+
+### 外部agent采集（拉模式）
+根据外部agent所属地域不同（比如不同机房、不同省份、不同运营商等维度），采集配置和采集出来的数据也是不一样的，需要详细设计
+
+* 基于各种协议的监控（IPMI, http, https， tcp, ucp等）
+* 端口监控项采集
 
 
 ## 采集的指标类型： 参考: https://prometheus.io/docs/concepts/metric_types/
@@ -33,6 +36,9 @@ autoCollapseToc: true
 * gauge
 * histogram
 * summary
+
+
+## 采集配置
 
 
 ## 采集指标的方式：参考：http://blog.51cto.com/zlong37/1400819
@@ -65,10 +71,8 @@ https://codeascraft.com/2011/02/15/measure-anything-measure-everything/?utm_sour
 2）采集进程：负责性能数据采集与原始告警检测。
 3）调度进程：负责对agent插件的调度。
 
-2、agent 的管理
-
-
-
+2、agent的管理
+包括agent的存活性统计、版本更新、采集配置下发
 
 
 
